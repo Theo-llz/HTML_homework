@@ -7,9 +7,13 @@ function addItem(){
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode("text");
 	new_text = new_item;
-	document.getElementById("list").appendChild(new_li);
 	new_li.appendChild(new_text);
+	document.getElementById("list").appendChild(new_li);
 	
+	
+	if(document.getElementById("important".checked == true ){
+		
+	}
 }
 
 function init(){
