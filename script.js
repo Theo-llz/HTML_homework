@@ -7,7 +7,7 @@ function addItem(){
 	let new_text = document.createTextNode(document.getElementById("item").value);
 	
 	if(document.getElementById("important").checked == true ){
-		new_li.color = "red";
+		new_li.style.color = "red";
 	}
 	
 	if(document.getElementById("groceries").checked == true ){
