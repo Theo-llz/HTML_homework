@@ -11,5 +11,8 @@ function init(){
 	images[3].src = "flower2.png";
 	images[4].src = "flower1.png";
 	document.getElementById("text").innerHTML = <div><p>Your are great!</p></div>;
-
+	
+	let image = document.createElement("img");
+	image.src = "flower2.png";
+	document.getElementById("new_element").appendChild(image);
 }
