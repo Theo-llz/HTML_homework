@@ -9,6 +9,7 @@ function addItem(){
 	new_text = new_item;
 	document.getElementById("list").appendChild(new_li);
 	new_li.appendChild(new_text);
+	
 }
 
 function init(){
