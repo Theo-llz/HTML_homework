@@ -6,9 +6,9 @@ function addItem(){
 	let new_item = document.getElementById("item").value;
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode("text");
-	
+	new_text.text = new_item;
 	if(document.getElementById("important").checked == true ){
-		new_li.color = red;
+		new_li.color = "red";
 	}
 	
 	if(document.getElementById("groceries").checked == true ){
