@@ -5,7 +5,6 @@ function greet(){
 function addItem(){
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode(document.getElementById("item").value);
-	new_li.appendChild(new_text);
 	
 	if(document.getElementById("important").checked == true ){
 		new_li.color = "red";
@@ -15,13 +14,14 @@ function addItem(){
 		new_li.style["underline"];
 	}
 	
+	new_li.appendChild(new_text);
 	document.getElementById("list").appendChild(new_li);
 }
 
 function removeItem(){
 	let number = document.getElementById("nombre").value;
 	let list = document.getElementById("list");
-	list.removeChild(list.childNodes[number]);
+	list.removeChild(list.childNodes[number-1]);
 }
 
 function init(){
