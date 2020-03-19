@@ -25,9 +25,16 @@ function init(){
 	
 	var changeSrc = function(event) {
 	  if (event.target.src) {
-		event.target.src = "flower2.png";
+		  let filename = event.target.src.replace(/^.*[\\\/]/, '');
+			  if(filename ="flower1.png"){
+				  event.target.src = "flower2.png";
+			  }
+			  else{
+					 event.target.src = "flower1.png";
+			  }
 	  }
 	};
 
 	document.getElementById("event").addEventListener("mouseover", changeSrc);
+	
 }
