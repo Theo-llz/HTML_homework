@@ -7,6 +7,26 @@ function addItem(){
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode("text");
 	new_text.text = new_item;
+	
+	if(document.getElementById("important").checked == true ){
+		new_li.color = "red";
+	}
+	
+	if(document.getElementById("groceries").checked == true ){
+		new_li.style["underline"];
+	}
+	
+	new_li.appendChild(new_text);
+	new_li.text = new_item;
+	document.getElementById("list").appendChild(new_li);
+}
+
+function removeItem(){
+	let new_item = document.getElementById("item").value;
+	let new_li = document.createElement("li");
+	let new_text = document.createTextNode("text");
+	new_text.text = new_item;
+	
 	if(document.getElementById("important").checked == true ){
 		new_li.color = "red";
 	}
