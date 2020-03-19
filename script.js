@@ -10,4 +10,6 @@ function init(){
 	images[2].src = "flower1.png";
 	images[3].src = "flower2.png";
 	images[4].src = "flower1.png";
+	document.getElementById("text").innerHTML = "<div><p>Your are great!</p></div>";
+
 }
