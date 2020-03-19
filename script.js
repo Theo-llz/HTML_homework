@@ -3,10 +3,9 @@ function greet(){
 }
 
 function addItem(){
-	let new_item = document.getElementById("item").value;
 	let new_li = document.createElement("li");
-	let new_text = document.createTextNode("text");
-	new_text.text = new_item;
+	let new_text = document.createTextNode(document.getElementById("item").value);
+	new_li.appendChild(new_text);
 	
 	if(document.getElementById("important").checked == true ){
 		new_li.color = "red";
@@ -16,8 +15,6 @@ function addItem(){
 		new_li.style["underline"];
 	}
 	
-	new_li.appendChild(new_text);
-	new_li.text = new_item;
 	document.getElementById("list").appendChild(new_li);
 }
 
