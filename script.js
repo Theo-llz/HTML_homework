@@ -22,4 +22,12 @@ function init(){
 	for (var i = spans.length - 1; i >= 0; i--) {
 		spans[i].style.color = colors[i];
 	}
+	
+	var changeSrc = function(event) {
+	  if (event.target.src) {
+		event.target.src = "flower2.png";
+	  }
+	};
+
+	document.getElementById("event").addEventListener("mouseover", changeSrc);
 }
