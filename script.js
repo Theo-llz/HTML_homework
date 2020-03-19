@@ -3,5 +3,5 @@ function greet(){
 }
 
 function init(){
-	document.getElementById("first").src = "icons\flower1.png";
+	document.getElementById("first").src = "flower1.png";
 }
