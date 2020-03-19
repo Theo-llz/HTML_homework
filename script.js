@@ -7,13 +7,17 @@ function addItem(){
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode("text");
 	new_text = new_item;
+	
+	if(document.getElementById("important").checked == true ){
+		new_li.color = red;
+	}
+	
+	if(document.getElementById("groceries").checked == true ){
+		new_li.style["underline"];
+	}
+	
 	new_li.appendChild(new_text);
 	document.getElementById("list").appendChild(new_li);
-	
-	
-	if(document.getElementById("important".checked == true ){
-		
-	}
 }
 
 function init(){
