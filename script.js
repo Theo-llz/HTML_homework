@@ -26,7 +26,7 @@ function init(){
 	var changeSrc = function(event) {
 	  if (event.target.src) {
 		  let filename = event.target.src.replace(/^.*[\\\/]/, '');
-			  if(filename ="flower1.png"){
+			  if(filename =="flower1.png"){
 				  event.target.src = "flower2.png";
 			  }
 			  else{
