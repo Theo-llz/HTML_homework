@@ -11,7 +11,7 @@ function addItem(){
 	}
 	
 	if(document.getElementById("groceries").checked == true ){
-		new_li.style[text-decoration] = "underline";
+		new_li.style["text-decoration"] = "underline";
 	}
 	
 	new_li.appendChild(new_text);
