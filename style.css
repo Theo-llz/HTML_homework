@@ -44,5 +44,12 @@ a:visited {
 .infos{
 	margin: 5px;
 	padding: 5px;
-	
+}
+
+.green{
+	text-color: green;
+}
+
+.red{
+	text-color: red;
 }
