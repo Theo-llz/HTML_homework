@@ -1,6 +1,6 @@
 body {
   margin-left: 200px;
-  background-color: #3aafa9;
+  background-color: #c4895a;
 }
 
 h1 {
@@ -45,10 +45,10 @@ a:visited {
 	padding: 5px;
 }
 
-.green{
-	color: green;
+.color1{
+	color: rgb(70, 58, 20);
 }
 
-.red{
-	color: red;
+.color2{
+	color: rgb(155, 34, 34);
 }

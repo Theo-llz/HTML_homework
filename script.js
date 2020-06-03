@@ -1,16 +1,16 @@
 function greet(){
-	window.alert("Bonjour tout le monde !");
+	window.alert("Hello world !");
 }
 
 function addItem(){
 	let new_li = document.createElement("li");
 	let new_text = document.createTextNode(document.getElementById("item").value);
 	
-	if(document.getElementById("important").checked == true ){
+	if(document.getElementById("delivery").checked == true ){
 		new_li.style.color = "red";
 	}
 	
-	if(document.getElementById("groceries").checked == true ){
+	if(document.getElementById("gift").checked == true ){
 		new_li.style["text-decoration"] = "underline";
 	}
 	
